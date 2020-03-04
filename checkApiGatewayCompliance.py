@@ -23,5 +23,5 @@ def lambda_handler(event, context):
                 print("Successfully attached WebACL ["+web_acl_to_attach_by_default+"] to Resource ["+resource_arn+"]")
                 return True
             except Exception as e:
-                print("Unable to attach Resource ["+resource_arn+"]" to WebACL ["+web_acl_to_attach_by_default+"]")
+                print("Unable to attach Resource ["+resource_arn+"] to WebACL ["+web_acl_to_attach_by_default+"]")
                 return False
